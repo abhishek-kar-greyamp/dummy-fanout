@@ -9,7 +9,7 @@
     "start:product": "node product_details/index.js",
     "build": "npm install",
     "start:production": "node ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:auth": "jest ./auth --coverage"
   },
   "author": "",
   "license": "ISC",

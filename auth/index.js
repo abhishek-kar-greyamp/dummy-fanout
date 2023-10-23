@@ -19,6 +19,8 @@ app.get("/auth", (req, res) => {
   }
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Auth service is listening on port ${port}`);
 });
+
+module.exports = server;
