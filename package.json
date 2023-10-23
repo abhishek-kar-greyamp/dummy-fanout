@@ -1,0 +1,22 @@
+{
+  "name": "jenkins-dummy",
+  "version": "0.0.1",
+  "description": "Dummy app to test jenkins pipeline files",
+  "main": "index.js",
+  "scripts": {
+    "start:auth": "node auth/index.js",
+    "start:user": "node user_details/index.js",
+    "start:product": "node product_details/index.js",
+    "build": "npm install",
+    "start:production": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
