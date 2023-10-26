@@ -4,11 +4,11 @@
   "description": "Dummy app to test jenkins pipeline files",
   "main": "index.js",
   "scripts": {
-    "start:auth": "node auth/index.js",
-    "start:user": "node user_details/index.js",
-    "start:product": "node product_details/index.js",
+    "start:auth": "node auth/index.js > auth.log 2>&1 &",
+    "start:user": "node user_details/index.js > user_details.log 2>&1 &",
+    "start:product": "node product_details/index.js > product_details.log 2>&1 &",
     "build": "npm install",
-    "start:production": "node ./index.js",
+    "start:production": "node ./index.js > prod.log 2>&1 &",
     "test:auth": "jest ./auth --coverage"
   },
   "author": "",
